@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-truculenta overflow-x-hidden;
+  }
+  .container {
+    @apply max-w-7xl w-full px-4 mx-auto;
+  }
+}
+
+@layer components {
+  /* HEADER */
+  .header {
+    @apply bg-semilight shadow-md fixed w-full py-1;
+  }
+  .header__wrapper {
+    @apply flex items-center justify-between;
+  }
+  .header__nav {
+    @apply flex gap-5;
+  }
+  .header__nav ul {
+    @apply flex flex-row gap-4;
+  }
+  .header__nav ul li a {
+    @apply font-semibold text-lg;
+  }
+
+  /* HOME CATALOG */
+  .homeCatalog__card {
+    @apply bg-white w-[26rem] shadow-xl;
+  }
+  .homeCatalog__card img {
+    @apply w-full;
+  }
+  .homeCatalog__card__details {
+    @apply px-4 pt-5 pb-4;
+  }
+  .homeCatalog__card__details h4 {
+    @apply text-2xl text-secondary font-semibold;
+  }
+  .homeCatalog__card__details p {
+    @apply my-2;
+  }
+  .homeCatalog__card__details a {
+    @apply text-primary;
+  }
+
+  /* HOME CONTACT */
+  .homeContact {
+    @apply bg-primary pt-10 pb-8 text-center;
+  }
+  .homeContact h2 {
+    @apply text-3xl font-bold;
+  }
+
+  /* FOOTER */
+  .footer {
+    @apply bg-black/85 py-8 text-white;
+  }
+  .footer__wrapper {
+    @apply flex justify-between;
+  }
+  .footer__socialList ul {
+    @apply flex gap-4;
+  }
+
+  .btn--semilight {
+    @apply bg-semilight py-2 px-4 rounded-full font-semibold inline-block;
+  }
+}
