@@ -10,59 +10,54 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
 
   <body>
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="branding">
-            <a href="./index.html">
-              <img src="../img/LOGO.png" alt="This is the logo." />
-            </a>
-          </div>
-
+          <a href="./index.html"
+            ><img src="../img/LOGO.png" alt="This is the Logo of Inside Style."
+          /></a>
           <nav class="header__nav">
             <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">CATALOG</a></li>
-              <li><a href="">CONTACTS</a></li>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">Contacts</a></li>
             </ul>
           </nav>
-          <!-- <div class="toggle__menu">
-              <span></span>
-              <span></span>
-            </div> -->
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
 
-    <section
-      class="homeTitle pt-32 pb-5 bg-secondary flex items-center text-center"
-    >
-      <div class="container">
-        <h2 class="font-thin text-m">INTERIOR DESIGN</h2>
-        <h1 class="font-semibold text-3xl leading-5">
-          inside <br />
-          style
-        </h1>
+    <section class="homeBanner py-10">
+      <div class="homeBanner__top pt-24 pb-3 bg-secondary text-center">
+        <small>INTERIOR DESIGN</small>
+        <h4 class="text-xl font-bold max-w-12 mx-auto lg:text-2xl leading-4">
+          inside style
+        </h4>
       </div>
-    </section>
-
-    <section class="homeBanner pt-12 pb-20">
       <div class="container">
-        <!-- <div class="homeBanner__wrapper flex flex-wrap justify-between"> -->
-        <div class="homeBanner__wrapper grid grid-cols-1 xl:grid-cols-[1.5fr_1fr] gap-6 justify-between">
-          <div class="homeBanner__description ">
-            <div class="homeBanner__title">
-              <h3 class="text-primary font-bold text-5xl">New</h3>
-              <h3 class="text-secondary font-bold text-5xl ml-[4.2rem]">
-                INTERIOR
-              </h3>
-              <h3 class="text-primary text-5xl font-thin ml-32">Collections</h3>
-            </div>
-            <p class="mt-5 mb-8">
+        <div
+          class="homeBanner_wrapper py-8 flex flex-col gap-5 md:flex-row md:gap-10 justify-between"
+        >
+          <div class="homeBanner__text">
+            <h1 class="text-4xl flex flex-col items">
+              <span class="text-primary font-bold">New</span>
+              <span class="text-secondary font-bold ml-10">INTERIOR</span>
+              <span class="text-primary font-thin ml-20">Collections</span>
+            </h1>
+            <p class="my-7 md:max-w-3xl lg:max-w-4xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
               deserunt alias dolorum veritatis ipsam sed dolores fuga modi sint
               aliquam, explicabo nisi accusamus provident nesciunt hic. Illo
@@ -74,18 +69,15 @@
               assumenda laborum? Voluptates accusantium autem doloremque
               provident porro illo officiis laborum.
             </p>
-            <a href="#" class="btn btn--semilight mb-10">Learn more</a>
+            <a href="#" class="btn--semilight mb-10">Learn more</a>
           </div>
 
-          <div class="homeBanner__image flex gap-5 lg:flex-row relative items-center justify-center -z-10">
-            <img
-              src="../img/banner-1.png"
-              alt="A picture of a chair with plants around it."
-            />
+          <div class="homeBanner__image flex justify-center gap-5">
+            <img src="../img/banner-1.png" alt="This is interior image." />
             <img
               src="../img/banner-2.png"
-              class="relative top-10 "
-              alt="A picture of a chair with plants around it."
+              class="md:relative md:top-5"
+              alt="This is interior image"
             />
           </div>
         </div>
@@ -94,17 +86,22 @@
 
     <section class="homeAbout bg-black/85 py-12">
       <div class="container">
-        <h2 class="text-primary text-4xl flex justify-end pb-11">
+        <h2
+          class="text-primary text-3xl mb-5 md:text-4xl md:before:content-['_'] md:before:inline-block md:before:bg-primary md:before:w-[30rem] md:before:h-[0.10rem] md:before:relative md:before:right-4 md:before:bottom-3 md:text-right lg:w-[90rem]"
+        >
           About Inside Style
         </h2>
-        <!-- <div class="homeAbout__wrapper flex flex-wrap items-center gap-14"> -->
-        <div class="homeAbout__wrapper grid grid-cols-1 lg:grid-cols-[1fr_2fr] items-center gap-14">
+        <div
+          class="homeAbout__wrapper flex flex-col md:flex-row md:items-center gap-10"
+        >
           <img
             class="flex items"
             src="../img/about-2.png"
-            alt="A picture of a chair with plants around it."
+            alt="This is interior image."
           />
-          <div class="homeAbout_description w-[67rem] text-white flex flex-col gap-5 text-justify items-center">
+          <div
+            class="homeAbout_description text-white flex flex-col gap-5 text-justify items-center"
+          >
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
               sint numquam necessitatibus asperiores delectus repudiandae soluta
@@ -144,12 +141,14 @@
 
     <section class="homeCatalog bg-semilight pt-8 pb-14">
       <div class="container">
-        <h2 class="text-primary py-9 text-4xl">Catalog</h2>
+        <h2 class="text-primary mb-5 text-4xl">Catalog</h2>
 
-        <div class="homeCatalog__wrapper flex flex-wrap gap-16 justify-center">
-          <div class="homeCatalog__card">
-            <img src="../img/catalog-1.png" alt="" />
-            <div class="homeCatalog__card__details">
+        <div
+          class="homeCatalog__wrapper flex flex-wrap gap-16 justify-center md:gap-10"
+        >
+          <div class="card">
+            <img src="../img/catalog-1.png" alt="This is a boho theme image." />
+            <div class="card__details">
               <h4>Boho Theme</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed sit in euismod nulla
@@ -159,9 +158,9 @@
             </div>
           </div>
 
-          <div class="homeCatalog__card">
-            <img src="../img/catalog-2.png" alt="" />
-            <div class="homeCatalog__card__details">
+          <div class="card">
+            <img src="../img/catalog-2.png" alt="This is a minimalist image." />
+            <div class="card__details">
               <h4>Minimalist Theme</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed sit in euismod nulla
@@ -171,9 +170,12 @@
             </div>
           </div>
 
-          <div class="homeCatalog__card">
-            <img src="../img/catalog-3.png" alt="" />
-            <div class="homeCatalog__card__details">
+          <div class="card">
+            <img
+              src="../img/catalog-3.png"
+              alt="This is a traditional theme image."
+            />
+            <div class="card__details">
               <h4>Traditional Theme</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Sed sit in euismod nulla
@@ -186,9 +188,69 @@
       </div>
     </section>
 
-    <section class="homeContact">
+    <section class="testiomonials py-10">
       <div class="container">
-        <h2>Feel free to talk about your desired style</h2>
+        <h2 class="text-2xl font-bold text-primary text-center mb-5">
+          CLIENTS REVIEW
+        </h2>
+        <div class="testimonials__wrapper">
+          <div class="testimonials__slider">
+            <div class="testimonials__item">
+              <h4>Patricia Greenish</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Grace Reyes</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>John Hey</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Jeff Pesina</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Rhoda Beloso</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Cyrene Dimaculangan</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                accusamus enim, eaque rem pariatur nesciunt incidunt tempore
+                maiores sunt dolorem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h3>Feel free to talk about your desired style</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur. Urna ut ipsum volutpat tempas
           nune.
@@ -200,22 +262,22 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__socialList">
+          <div class="socialList">
             <ul>
               <li>
-                <i class="fa-brands fa-facebook"></i>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
               </li>
               <li>
-                <i class="fa-brands fa-twitter"></i>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
               </li>
               <li>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
-                <i class="fa-brands fa-youtube"></i>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
               </li>
             </ul>
           </div>
@@ -228,5 +290,9 @@
         </div>
       </div>
     </footer>
+
+    <script src="./toggleMenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>
