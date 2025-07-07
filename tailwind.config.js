@@ -9,7 +9,7 @@ module.exports = {
         semilight: "#d9d9d9",
       },
       fontFamily: {
-        truculenta: "Truculenta",
+        truculenta: "truculenta",
       },
     },
   },

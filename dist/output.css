@@ -558,7 +558,7 @@ video {
 
 body{
   overflow-x: hidden;
-  font-family: Truculenta;
+  font-family: truculenta;
 }
 
 .container{
@@ -862,6 +862,11 @@ body{
   margin-right: auto;
 }
 
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -872,8 +877,16 @@ body{
   margin-bottom: 1.75rem;
 }
 
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
+}
+
+.mb-11{
+  margin-bottom: 2.75rem;
 }
 
 .mb-5{
@@ -886,6 +899,10 @@ body{
 
 .ml-10{
   margin-left: 2.5rem;
+}
+
+.ml-16{
+  margin-left: 4rem;
 }
 
 .ml-20{
@@ -958,6 +975,10 @@ body{
   background-color: rgb(217 217 217 / var(--tw-bg-opacity, 1));
 }
 
+.p-20{
+  padding: 5rem;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1028,6 +1049,10 @@ body{
 
 .font-bold{
   font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .font-thin{
